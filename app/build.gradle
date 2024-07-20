@@ -1,0 +1,81 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace = "com.example.a01_app"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId = "com.example.a01_app"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    implementation libs.navigation.fragment
+    implementation libs.navigation.ui
+    implementation libs.camera.view
+    implementation libs.camera.lifecycle
+
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    implementation libs.gson
+
+    implementation libs.glide.v4132
+    annotationProcessor libs.compiler.v4132
+
+    // CameraX core library
+    implementation libs.camera.core
+
+    // CameraX Camera2 implementation
+    implementation libs.androidx.camera.camera2
+
+    // CameraX Lifecycle library
+    implementation libs.camera.lifecycle
+
+    // CameraX View class
+    implementation libs.camera.view
+
+    // CameraX Extensions library
+    implementation libs.androidx.camera.extensions.v134
+
+    // --------------------------------------------------
+    // Gemini-API
+    // add the dependency for the Google AI client SDK for Android
+    implementation(libs.generativeai.v070)
+
+    // Required for one-shot operations (to use `ListenableFuture` from Guava Android)
+    implementation(libs.guava)
+
+    // Required for streaming operations (to use `Publisher` from Reactive Streams)
+    implementation(libs.reactive.streams)
+    // --------------------------------------------------
+}

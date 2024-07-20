@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ABB NEW</string>
+    <string name="home">Home</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="history">History</string>
+    <string name="open_camera">Open Camera</string>
+    <string name="take_a_sketch_from_the_camera">Take a sketch from the camera</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <corners
+        android:radius="20dp" />
+
+    <stroke
+        android:color="#16871A"
+        android:width="2dp"/>
+
+    <!-- Change the background color here -->
+    <solid android:color="#C3C3C3"/> <!-- Replace with your desired color -->
+
+</shape>

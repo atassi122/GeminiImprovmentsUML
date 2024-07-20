@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:background="#878787">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/abb_logo"
+        android:adjustViewBounds="true"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="260dp"
+        android:padding="16dp"
+        android:text="Our app offers a powerful functionality to capture or select photos for analysis.\n Users can either take a new photo using the camera or choose an existing one from their gallery. \nThe app processes and analyzes the selected images, providing insightful responses.\n \n Additionally, it saves all user requests and corresponding responses into a comprehensive history, allowing users to review their previous interactions and analyses at any time."
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textAlignment="center" />
+</FrameLayout>
