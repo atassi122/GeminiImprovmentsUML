@@ -16,7 +16,7 @@ public class GeminiAPI {
 
     public GeminiAPI() {
         // Initialize the generative model
-        GenerativeModel gm = new GenerativeModel("gemini-1.5-flash", "AIzaSyDudh-xlePFz6blHTZncqeKpQ8SubRyQ00");
+        GenerativeModel gm = new GenerativeModel("gemini-1.5-flash", "PUT YOUR API-KEY HERE");
         model = GenerativeModelFutures.from(gm);
     }
 
